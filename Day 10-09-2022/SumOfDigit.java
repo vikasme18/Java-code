@@ -14,11 +14,14 @@ class SumOfDigit {
 	}
 
 	public static void main(String[] args) {
+		// scanner object
 		java.util.Scanner sc = new java.util.Scanner(System.in);
 		
+		// user input
 		System.out.print("Enter any number: ");
 		int num = sc.nextInt();
 		
+		// calling static method
 		add(num);
 	}
 
