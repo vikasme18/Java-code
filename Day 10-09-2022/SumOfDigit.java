@@ -6,9 +6,9 @@ class SumOfDigit {
 		int last;
 		// loop will continue till the number become zero
 		while (num != 0) {
-			last =  num % 10;  // It store last value from the number
+			last =  num % 10;  // It will store last value from the number
 			sum += last;  // last number will added for every iteration
-			num /= 10;  // last number will removed by dividing it to 10
+			num /= 10;  // removing last number by dividing with 10
 		}
 		System.out.print(sum);
 	}
