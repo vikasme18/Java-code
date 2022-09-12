@@ -1,12 +1,14 @@
 class SumOfDigit {
-
+	
+	
 	static void add(int num) {
 		int sum = 0;
 		int last;
+		// loop will continue till the number become zero
 		while (num != 0) {
-			last =  num % 10;
-			sum += last;
-			num /= 10;
+			last =  num % 10;  // It store last value from the number
+			sum += last;  // last number will added for every iteration
+			num /= 10;  // last number will removed by dividing it to 10
 		}
 		System.out.print(sum);
 	}
