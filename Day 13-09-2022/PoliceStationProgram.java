@@ -34,12 +34,15 @@ class PoliceStationProgram {
 		// Checking the number of data using switch statement
 		switch(num_data) {
 			case 1:
+				// This will call the method which takes pincode as a parameter
 				ps1.Area(421306);
 				break;
 			case 2:
+				// This will call the method which takes pincode and police station as a parameter
 				ps1.Area(421306, "Chinchpada");
 				break;
 			case 3:
+				// This will call the method which takes pincode, police station and city as a parameter
 				ps1.Area(421306, "Chinchpada", "Kalyan");
 				break;
 			default: 
