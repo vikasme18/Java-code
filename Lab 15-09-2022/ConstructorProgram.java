@@ -25,7 +25,7 @@ public class ConstructorProgram {
 		this.location = location;
 	}
 	
-	// THis method display details of student
+	// This method display details of student
 	void showInfo() {
 		System.out.println("ID: " + id);
 		System.out.println("Name: " + name);
