@@ -11,10 +11,7 @@ public class MainPlayer {
 		
 		if (p instanceof Cricketer) {
 			((Cricketer) p).bat(); // downcasting
-		}
-		
-		if (p instanceof Cricketer) {
-			((Cricketer) p).ball(); // downcasting
+			((Cricketer) p).ball();
 		}
 		
 		p = new Footballer(); // upcasting
@@ -22,14 +19,8 @@ public class MainPlayer {
 		
 		if (p instanceof Footballer) {
 			((Footballer) p).goal(); // downcasting
-			
+			((Footballer) p).defence();	
 		}
-		
-		if (p instanceof Footballer) {
-			((Footballer) p).defence(); // downcasting
-		}
-		
-		
 	}
 
 }
