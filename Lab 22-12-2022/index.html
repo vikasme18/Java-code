@@ -11,7 +11,7 @@
 </head>
 <style>
   body {
-    background-color: #F1F6F5;
+    background-color: #f4fff5;
   }
 
   .form-container {
@@ -24,11 +24,15 @@
     font-family: 'Roboto Mono', 'sans-serif', 'serif';
     font-weight: 700;
     text-align: center;
+    border: 1px solid black;
+    border-radius: 0.7rem;
   }
 
   .outer {
     font-family: 'Ubuntu', 'sans-serif', 'serif';
     border: 1px solid black;
+    border-radius: 0.7rem;
+    font-size: 1.1rem;
   }
 
   .row {
@@ -46,27 +50,25 @@
 
   button {
     margin: 30px 20px;
-    width: 120px;
+    width: 125px;
     padding: 5px;
-    font-size: 14px;
+    font-size: 16px;
     background-color: white;
-    border-radius: 1rem;
-    height: 35px;
+    border: 1px solid black;
+    height: 40px;
+    font-weight: 500;
+    border-radius: 0.7rem;
   }
 
   button:hover {
     cursor: pointer;
-    background-color: #F1F6F5;
+    background-color: #d8fcd4;
   }
-
-  .col input[type=text] {
-    padding: 10px auto;
-  } 
-
+  
 </style>
 <body>
   <div class="form-container">
-    <form action="" method="POST">
+    <form action="index.html" method="POST">
     <h1>Student Registration</h1>
     <div class="outer">
     <div class="row">
@@ -102,7 +104,7 @@
             <td><label>Gender :</label></td>
             <td>
               <input name="student" type="radio">Male
-              <input name="student" type="radio">Female
+              <input style="margin-left: 35px;" name="student" type="radio">Female
             </td>
           </tr>
           <tr>
@@ -139,9 +141,9 @@
     </div>
      
     <div class="btn-choice">
-      <button>Total</button>
-      <button>Average</button>
-      <button>Submit</button>
+      <button type="button">Total</button>
+      <button type="button">Average</button>
+      <button type="button">Submit</button>
     </div>
     </div>
     </form>
