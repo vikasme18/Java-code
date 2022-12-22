@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<style>
+  body {
+    background-color: #F1F6F5;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+    margin: 80px;
+  }
+
+  h1 {
+    font-family: 'Roboto Mono', 'sans-serif', 'serif';
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .outer {
+    font-family: 'Ubuntu', 'sans-serif', 'serif';
+    border: 1px solid black;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .bird-image {
+    border-radius: 100%;
+  }
+
+  .btn-choice {
+    display: flex;
+    justify-content: center;
+  }
+
+  button {
+    margin: 30px 20px;
+    width: 120px;
+    padding: 5px;
+    font-size: 14px;
+    background-color: white;
+    border-radius: 1rem;
+    height: 35px;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: #F1F6F5;
+  }
+
+  .col input[type=text] {
+    padding: 10px auto;
+  } 
+
+</style>
+<body>
+  <div class="form-container">
+    <form action="" method="POST">
+    <h1>Student Registration</h1>
+    <div class="outer">
+    <div class="row">
+      <div class="col">
+        <table cellspacing="10px">
+          <tr>
+            <td><label>Student ID :</label></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td><label>Student Name :</label></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td><label>Student mark 1 :</label></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td><label>Student mark 2 :</label></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td><label>Student Total :</label></td>
+            <td><input type="text"></td></td>
+            <td></td>
+          </tr>
+          
+        </table>
+      </div>
+      <div class="col">
+        <table cellspacing="10px">
+          <tr>
+            <td><label>Gender :</label></td>
+            <td>
+              <input name="student" type="radio">Male
+              <input name="student" type="radio">Female
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="" id="">First Installment</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="" id="">Second Installment</td>
+          </tr>
+          <tr>
+            <td>Course</td>
+            <td>
+              <select>
+                <option>Java</option>
+                <option>C++</option>
+                <option>Python</option>
+                <option>.Net</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Email</label></td>
+            <td><input type="email" name="" id=""></td>
+          </tr>
+          <tr>
+            <td><label>resume</label></td>
+            <td><input type="text" name="" id=""></td>
+          </tr>
+          <tr>
+            <td>Student Photo</td>
+            <td><input type="file" accept="image/jpg, image/png"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+     
+    <div class="btn-choice">
+      <button>Total</button>
+      <button>Average</button>
+      <button>Submit</button>
+    </div>
+    </div>
+    </form>
+  </div>
+</body>
+</html>
