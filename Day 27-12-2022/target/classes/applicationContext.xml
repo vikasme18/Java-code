@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+ xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/tx
+    http://www.springframework.org/schema/tx/spring-tx.xsd" >
+
+	<bean id="ques1" class="com.springcore.Question">
+		<constructor-arg value="652"></constructor-arg>
+		<constructor-arg value="What is java?"></constructor-arg>
+		<constructor-arg>
+			<list>
+				<value>Java is a programming language</value>
+				<value>Java is a Platform</value>
+				<value>Java is an Island of Indonasia</value>
+			</list>
+		</constructor-arg>
+	</bean>
+
+</beans> 
